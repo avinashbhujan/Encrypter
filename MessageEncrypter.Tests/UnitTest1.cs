@@ -42,9 +42,21 @@ namespace MessageEncrypter.Tests
         [TestMethod]
         public void TestMethod3()
         {
-            string expected = "bcd";
+            string expectedResult = "bcd";
             string msg = "555";
+            EncryptionHelper th = new EncryptionHelper();
 
+            string actualResult = th.encryptMessage(msg);
+
+            Assert.AreNotEqual(expectedResult, actualResult);
+
+        }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            string expected = "aaa";
+            string msg = "zzz";
             EncryptionHelper th = new EncryptionHelper();
 
             string actual = th.encryptMessage(msg);
@@ -54,17 +66,14 @@ namespace MessageEncrypter.Tests
         }
 
         [TestMethod]
-        public void TestMethod4()
-        {
-            string expected = "aaa";
-            string msg = "zzz";
-
+        public void TestMethod5() {
+            string msg = "abc 123def";
+            string expectedResult = "bcd 123efg";
             EncryptionHelper th = new EncryptionHelper();
 
-            string actual = th.encryptMessage(msg);
+            string actualResult = th.encryptMessage(msg);
 
-            Assert.AreEqual(expected, actual);
-
+            Assert.AreNotEqual(expectedResult, actualResult);
         }
     }
 }
