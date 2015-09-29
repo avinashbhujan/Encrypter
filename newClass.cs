@@ -5,6 +5,6 @@ using System.Web;
 
 public class newClass{
 	public static void Main(string[] args){
-		
+		Console.WriteLine("New Class Test.");
 	}
 }
