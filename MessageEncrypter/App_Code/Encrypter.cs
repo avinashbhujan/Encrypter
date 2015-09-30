@@ -18,10 +18,8 @@ namespace MessageEncrypter.App_Code
 
         public void Init(HttpApplication application)
         {
-            application.BeginRequest +=
-                (new EventHandler(this.Application_BeginRequest));
-            application.EndRequest +=
-                (new EventHandler(this.Application_EndRequest));
+            application.BeginRequest += (new EventHandler(this.Application_BeginRequest));
+            application.EndRequest += (new EventHandler(this.Application_EndRequest));
         }
 
         private void Application_BeginRequest(Object source,EventArgs e)
