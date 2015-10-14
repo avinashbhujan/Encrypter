@@ -33,6 +33,10 @@ namespace MessageEncrypter.App_Code
             HttpContext context = application.Context;
             try
             {
+<<<<<<< HEAD
+=======
+                
+>>>>>>> 991e00b504738c884b535b04db5a17574cbe8959
                 NameValueCollection nvc = context.Request.Form;
                 string initialMessage = String.Empty;
                 if (nvc != null)

@@ -7,6 +7,7 @@ namespace MessageEncrypter
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Response.Write("Request URL: " + HttpContext.Current.Request.Url);
             Response.Write("</br>");
 
@@ -21,6 +22,9 @@ namespace MessageEncrypter
 
             Response.Write("Is Debug Enable in current Mode?: " + HttpContext.Current.IsDebuggingEnabled);
             Response.Write("</br>");
+=======
+
+>>>>>>> 991e00b504738c884b535b04db5a17574cbe8959
         }
 
         protected void Button1_Click(object sender, EventArgs e)
